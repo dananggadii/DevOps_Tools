@@ -74,7 +74,14 @@ sudo yum install epel-release -y
 sudo yum install nginx -y
 ```
 
+> Using Docker (Recommended for DevOps)
+
+```bash
+docker run --name nginx -p 8080:80 -d nginx
+```
+
 ![alt text](images/image.png)
 
 ![alt text](images/image-1.png)
 
+![alt text](images/image2.png)
