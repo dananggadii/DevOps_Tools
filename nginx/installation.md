@@ -60,9 +60,18 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 
 8. To install nginx, run the following commands:
 
+> On Ubuntu/Debian
+
 ```bash
 sudo apt update
 sudo apt install nginx
+```
+
+> On RHEL/CentOS
+
+```bash
+sudo yum install epel-release -y
+sudo yum install nginx -y
 ```
 
 ![alt text](images/image.png)
