@@ -377,3 +377,29 @@ The output breakdown is shown below:
 ### 2. `btop` displays dynamic stats with different modes:
 
 ![alt text](image/image-31.png)
+
+## Permission Command
+
+### 1. `Chmod` Change mode command modifies file permissions
+
+Each permission has a numeric values:
+
+- r (readable) = 4
+- w (writeable) = 2
+- X (Executable) = 1
+
+Structure permission numeric:
+
+- Owner
+- Group
+- Others
+
+Command permission settings:
+
+|   Command    | Meaning   |
+|-----------|-----------|
+| chmod 777 file.txt     | Full permissions (read, write, execute for all).     |
+| chmod 755 file.sh    | Owner: rwx, Group & Others: rx (good for scripts).     |
+| chmod 644 file.txt     | Owner: rw, Group & Others: r (default for text files).     |
+| chmod 600 private.txt    | Only owner can read & write (good for sensitive files).     |
+
